@@ -11,5 +11,18 @@
             "email": "sjzeng@program.com.tw"
         }
     ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "OTP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\OTP\\": "tests/"
+        }
+    },
     "require": {}
 }
