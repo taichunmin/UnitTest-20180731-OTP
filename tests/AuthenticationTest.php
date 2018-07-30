@@ -10,7 +10,8 @@ class AuthenticationServiceTest extends TestCase
     /** @test */
     public function test_it_can_valid()
     {
-        //
+        $auth = new AuthenticationService;
+
+        $this->assertFalse($auth->isValid('Kim', 'abc123456'));
     }
 }
-
