@@ -12,6 +12,6 @@ class AuthenticationServiceTest extends TestCase
     {
         $auth = new AuthenticationService;
 
-        $this->assertFalse($auth->isValid('Kim', 'abc123456'));
+        $this->assertTrue($auth->isValid('Kim', 'abc123456'));
     }
 }
