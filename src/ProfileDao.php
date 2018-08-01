@@ -2,7 +2,12 @@
 
 namespace OTP;
 
-class ProfileDao
+interface IProfile
+{
+    public function getPassword(string $account) : string;
+}
+
+class ProfileDao implements IProfile
 {
     public function getPassword(string $account) : string
     {

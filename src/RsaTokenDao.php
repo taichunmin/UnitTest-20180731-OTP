@@ -2,7 +2,12 @@
 
 namespace OTP;
 
-class RsaTokenDao
+interface IToken
+{
+    public function getRandom(string $account) : string;
+}
+
+class RsaTokenDao implements IToken
 {
     public function getRandom(string $account) : string
     {
